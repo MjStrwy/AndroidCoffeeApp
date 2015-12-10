@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="name">Nombre</string>
+<string name="toppings_header">Coberturas</string>
+<string name="whipped_cream">Crema batida</string>
+<string name="quantity">Cantidad</string>
+<string name="orderSummary">
+Resumen del pedido</string>
+<string name="order">
+Orden</string>
+    <string name="thankyou">Gracias</string>
+</resources>

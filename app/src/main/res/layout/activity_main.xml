@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:capitalize="words"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/edt_Name"/>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toppings_header"
+            android:layout_marginBottom="16dp"
+            android:textAllCaps="true"/>
+
+
+        <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="@string/whipped_cream"
+        android:id="@+id/chx_WhippedCream"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/chocolate_header"
+            android:id="@+id/chx_Chocolate"/>
+
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:layout_marginBottom="16dp"
+            android:textAllCaps="true"
+            android:id="@+id/textView" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="decrement"
+                android:text="-"
+                android:id="@+id/decrement"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/quantity_text_view" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="increment"
+                android:text="+"
+                android:id="@+id/increment"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orderSummary"
+            android:layout_marginBottom="16dp"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$10.00"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/order_summary_text_view"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/order"
+            android:textAllCaps="true"
+            android:onClick="submitOrder"
+            android:id="@+id/button" />
+
+
+    </LinearLayout>
+</ScrollView>
